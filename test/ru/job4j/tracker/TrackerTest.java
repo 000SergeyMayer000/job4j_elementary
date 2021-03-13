@@ -53,4 +53,16 @@ public class TrackerTest {
         int id = item3.getId();
         assertThat(id, is(4));
     }
+
+    @Test
+    public void findByName() {
+        Item item1 = new Item("111");
+        Item item2 = new Item("222");
+        Item item3 = new Item("111");
+        Tracker tracker = new Tracker();
+        tracker.add(item1);
+        tracker.add(item2);
+        tracker.add(item3);
+        assertThat(tracker.findByName("111").length, is(2));
+    }
 }

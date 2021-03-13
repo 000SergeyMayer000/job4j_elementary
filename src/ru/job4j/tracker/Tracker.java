@@ -21,9 +21,10 @@ public class Tracker {
         Item[] result = new Item[this.size];
         int sizeArray = 0;
         for (int i = 0; i < this.size; i++) {
-            if (items[i].getName().equals(name)) ;
-            result[i] = items[i];
-            sizeArray++;
+            if (items[i].getName().equals(name)) {
+                result[sizeArray] = items[i];
+                sizeArray++;
+            }
         }
         return Arrays.copyOf(result, sizeArray);
     }
