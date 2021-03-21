@@ -33,7 +33,7 @@ public class StartUI {
                 new CreateAction(output),
                 new ShowAllAction(),
                 new ReplaceAction(),
-                new DeleteAction(),
+                new DeleteAction(output),
                 new FindIDAction(),
                 new FindNameAction(),
                 new ExitAction()
