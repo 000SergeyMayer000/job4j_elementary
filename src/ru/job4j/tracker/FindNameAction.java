@@ -14,6 +14,9 @@ public class FindNameAction implements UserAction {
         for (Item item : result) {
             System.out.println(item);
         }
+        if (result.length == 0) {
+            System.out.println("Заявок с таким именем нет");
+        }
         return true;
     }
 }
