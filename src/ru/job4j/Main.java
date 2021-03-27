@@ -1,23 +1,19 @@
 package ru.job4j;
 
+import ru.job4j.tracker.StubOutput;
+
 public class Main {
+
+    int a = 10;
+    String str = "Строка";
+
+    public  String foo(String str) {
+
+        return this.str;
+    }
+
     public static void main(String[] args) {
-        int a = 5;
-        int b = 8;
-        int c = 0;
-        int d = 0;
-        if (a > b) {
-            c = 10;
-        } else {
-            d = 100000;
-        }
-        System.out.println(d);
-        System.out.println();
-//        System.out.println("Hello world");
-//        System.out.println("внес изменения");
-//        String[] str = new String[]{"Sergej", "Konstantin", "Oleg"};
-//        for (String s : str) {
-//            System.out.println(s);
-//        }
+       // System.out.println(foo("Строка м методе"));
+     //   System.out.println(this.a);
     }
 }
